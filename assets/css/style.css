@@ -85,7 +85,7 @@ nav{
     height: 50px;
 }
 
- /* todo Estilos da página contato.html */
+ /* Estilos da página contato.html */
 
 .container-contato{
     display: flex;
@@ -135,7 +135,7 @@ nav{
     font-weight: bolder;
 }
 
-/* todo media */
+/* Mídia */
 @media (max-width: 768px){
     .container{
         flex-direction: column-reverse;

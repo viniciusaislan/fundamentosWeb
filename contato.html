@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <nav>
+        <ul id="menu">
+            <li>
+                <a href="index.html"> Home </a>
+            </li>
+            <li>
+                <a href="contato.html"> Contato </a>
+            </li>
+        </ul>
+    </nav>  
+
+    <h1 class="center">Entre em contato comigo</h1>
+
+    <main class="container-contato">
+        <section class="formulario">            
+            <form class="font">
+                <label for="nome">Nome:</label> <br />
+                <input type="text" id="nome" onkeyup="validaNome()" />
+                <div id="txtNome"></div>
+
+                <label for="email">E-mail:</label> <br />
+                <input type="email" id="email" onkeyup="validaEmail()" />
+                <div id="txtEmail"></div>
+
+                <label for="assunto">Assunto:</label> <br />
+                <textarea name="assunto" id="assunto" cols="60" rows="5" onkeyup="validaAssunto()"></textarea>
+                <div id="contador"></div>
+                <div id="txtAssunto"></div>
+
+                <button onclick="enviar()">Enviar</button>
+            </form>
+        </section>
+
+        <section id="endereco">
+            <p>
+                Avenida Paulista, 1000                
+            </p>
+            <p>
+                São Paulo - SP
+            </p>
+
+            <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.098169135354!2d-46.65412628554285!3d-23.56491746760758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5994f2e15a7d%3A0xdeb92126793e5e90!2sAv.%20Paulista%2C%201000%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001310-100!5e0!3m2!1spt-BR!2sbr!4v1645421397109!5m2!1spt-BR!2sbr" 
+            width="600" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy"
+            id="mapa" onmousemove="mapaZoom()" onmouseout="mapaNormal()"></iframe>
+        </section>
+    </main>
+
+    <hr>
+
+    <div class="icones">
+        <a href="https://github.com/viniciusaislan" target="_blank">
+            <img class="tm-icone" src="assets/img/github.png" alt="Foto ícone GitHub">
+        </a>
+        <a href="https://www.linkedin.com/in/viniciusaislan/" target="_blank">
+            <img class="tm-icone" src="assets/img/linkedin.png" alt="Foto ícone Linkedin">
+        </a>
+        <a href="https://www.instagram.com/viniciusaislan/" target="_blank">
+            <img class="tm-icone" src="assets/img/instagram.png" alt="Foto ícone Instagram">
+        </a>
+    </div>
+
+    <footer class="center">
+        <p>Feito na Generation Brazil - Vinicius Aislan - 2022</p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+
+
+</body>
+</html>

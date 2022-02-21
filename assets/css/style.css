@@ -1,0 +1,162 @@
+/* Estilos da página index.html */
+
+nav{
+    display: flex;
+    justify-content: center;    
+}
+
+
+#menu li{
+    display: inline;
+    padding: 25px;    
+}
+
+#menu li a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+#menu li a:hover{
+    color: mediumslateblue;
+}
+
+.center{
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    flex-flow: row-reverse;
+    justify-content: space-around   ;
+    align-items: center;
+}
+
+#sobreMim h1{
+    font-size: 50px;
+}
+
+#sobreMim p{
+    font-size: 20px;
+}
+
+#sobreMim h3{
+    font-size: 25px;
+}
+
+.justify{
+    text-align: justify;
+}
+
+.p-30{
+    padding: 30px;
+}
+
+.br-50{
+    border-radius: 50% 10%;  
+    padding: 50px;  
+}
+
+#minhaMusicaFavorita h2{
+    font-size: 30px;
+}
+
+.video{
+    width: 892px; 
+    height: 502px; 
+}
+
+.p-50{
+    padding: 1%;
+}
+
+.mg-60{
+    margin-bottom: 60px;
+}
+
+.icones{
+    display: flex;
+    justify-content: space-around;
+}
+
+.tm-icone{
+    width: 50px;
+    height: 50px;
+}
+
+ /* todo Estilos da página contato.html */
+
+.container-contato{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    width: 80vw;
+    min-height: 70vh;
+}
+
+.formulario {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+
+    label{
+        text-align: left;
+    }
+
+    input, textarea {
+        width:90%;
+        margin-bottom: 0rem;
+        padding: 5px 10px;
+        border-radius: 8px;
+        border: 1;
+    }
+
+    button {
+        padding: 5px 1rem;
+        width: 30%;
+        margin: 0 auto;
+        display: block;
+        background-color: #f3cfcf;
+        border: 2px solid #fcfcfc;
+        border-radius: 50px;
+        color: #050505;
+        }
+
+    button:hover {
+        background-color: #5f2424;
+        }
+    
+.font{
+    font-size: 20px;
+    font-style: oblique;
+    font-weight: bolder;
+}
+
+/* todo media */
+@media (max-width: 768px){
+    .container{
+        flex-direction: column-reverse;
+    }
+
+    .br-50{
+        border-radius: 50% 10%;  
+        width: 50vw;  
+    }
+
+    .video{
+        width: 80vw;
+        height: auto;
+    }
+
+    .icones{
+        display: flex;    
+        justify-content: space-around;
+    }
+
+    #endereco{
+        display: none;
+    }
+}
